@@ -3,7 +3,7 @@ Rapha_tech_test
 
 
 # assumptions 
-This solution assumes you have Terraform installed locally and have run 'aws configure' with valid IAM access key and secretly key.
+This solution assumes you have Terraform installed locally and have run 'aws configure' with valid IAM access key and secret key.
 It also assumes you have an AWS account and have permission to create resources with Terraform. 
 
 # Running the solution 
@@ -23,7 +23,7 @@ Run terraform
     
     terraform apply --auto-approve=true
 
-Go to you AWS management console and go to the ECS section
+Go to your AWS management console and go to the ECS section
 Click on the Raph_app service > task tab > task GUID 
 copy the public IP address and enter it into a web browser 'http://IP'
 
