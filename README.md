@@ -7,7 +7,7 @@ This solution assumes you have Terraform installed locally and have run 'aws con
 It also assumes you have an AWS account and have permission to create resources with Terraform. 
 
 # Running the solution 
-Clone the repo localy 
+Clone the repo locally 
     
     git clone https://github.com/JamesCalleja/Rapha_tech_test.git
 
