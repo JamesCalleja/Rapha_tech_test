@@ -11,7 +11,7 @@ resource "aws_ecs_service" "rapha_service" {
     network_configuration {
         assign_public_ip = true 
         security_groups  = [aws_security_group.rapha_sg.id,]
-        subnets          = data.aws_subnet_ids.rapha_subnet_ids.ids
+        subnets          = [aws_subnet.rapha_public_subnet_1.id, aws_subnet.rapha_public_subnet_2.id, aws_subnet.rapha_public_subnet_3.id]
     }
      
 

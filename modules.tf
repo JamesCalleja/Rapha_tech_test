@@ -3,4 +3,5 @@ module "ecs_definition_module" {
 
     container_name  = "rapha_container"
     container_image = "httpd:latest"
+    command         = ["httpd", "-D", "FOREGROUND"]
 }
