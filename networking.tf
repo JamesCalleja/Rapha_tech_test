@@ -34,8 +34,8 @@ resource "aws_subnet" "rapha_public_subnet_3" {
 resource "aws_route_table" "rapha_public_route_table" {
   vpc_id = aws_vpc.rapha_vpc.id
   route {
-    cidr_block  = "0.0.0.0/0"
-    gateway_id  = aws_internet_gateway.rapha_gateway.id
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.rapha_gateway.id
   }
 }
 
