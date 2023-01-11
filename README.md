@@ -2,7 +2,7 @@
 Rapha_tech_test
 
 
-# assuptions 
+# assumptions 
 This solution assumes you have Terraform installed locally and have run 'aws configure' with valid IAM access key and secretly key.
 It also assumes you have an AWS account and have permission to create resources with Terraform. 
 
