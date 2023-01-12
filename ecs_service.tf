@@ -14,5 +14,9 @@ resource "aws_ecs_service" "rapha_service" {
     subnets          = [aws_subnet.rapha_public_subnet_1.id, aws_subnet.rapha_public_subnet_2.id, aws_subnet.rapha_public_subnet_3.id]
   }
 
-
+  load_balancer {
+    target_group_arn = aws_lb_target_group.rapha_tg.arn
+    container_name   = "rapha_container"
+    container_port   = 80
+  }
 }
