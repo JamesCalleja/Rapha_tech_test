@@ -13,6 +13,15 @@ resource "aws_lb_target_group" "rapha_tg" {
   protocol    = "TCP"
   target_type = "ip"
   vpc_id      = aws_vpc.rapha_vpc.id
+
+  health_check {
+    path                = "/"
+    port                = 80
+    protocol            = "HTTP"
+    healthy_threshold   = 3
+    unhealthy_threshold = 3
+    matcher             = "200-499"
+  }
 }
 
 resource "aws_lb_listener" "rapha_listener_80" {
