@@ -23,8 +23,12 @@ Run terraform
     
     terraform apply --auto-approve=true
 
-Go to your AWS management console and go to the ECS section
-Click on the Raph_app service > task tab > task GUID 
-copy the public IP address and enter it into a web browser 'http://IP'
+Accessing the site
 
-you will see a splash page that says "It works!"
+    go to the url that is outputted once the terraform apply has run
+
+    you will see a splash page that says "It works!"
+
+Clean up
+
+    terraform destroy --auto-approve=true
